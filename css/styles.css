@@ -1,0 +1,69 @@
+html {
+    background-color:rgb(241, 237, 233);
+}
+
+h1 {
+    color:rgb(39, 31, 27);
+    font-size: 5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: -.2pt;
+    position: absolute;
+    bottom: 20vh;
+    left: 20vh;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+h2 {
+    color:rgb(39, 31, 27);
+    font-size: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -.2pt;
+    position: absolute;
+    bottom: 18vh;
+    left: 20vh;
+}
+
+p {
+    color:rgb(39, 31, 27);
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -.2pt;
+    position: absolute;
+}
+
+#about1 {
+    left: 20vh;
+    bottom: 50vh;
+    width: 30vw;
+}
+
+#about2 {
+    left: 20vh;
+    bottom: 42vh;
+    width: 30vw;
+}
+
+a:hover {
+    font-style: normal;
+}
+
+.work {
+    width: 14vw;
+    height: 14vw;
+}
+
+.work img {
+    width: 14vw;
+    height: 14vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.work img:hover {
+
+}
