@@ -8,9 +8,10 @@ h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: -.2pt;
-    position: absolute;
+    position: fixed;
     bottom: 20vh;
     left: 20vh;
+    z-index: 10;
     /* font-family: 'Work Sans', sans-serif; */
 }
 
@@ -21,10 +22,82 @@ h2 {
     font-weight: 600;
     font-style: italic;
     letter-spacing: -.2pt;
-    position: absolute;
+    position: fixed;
     bottom: 18vh;
     left: 20vh;
+    z-index: 10;
 }
+
+#illo {
+    position: fixed;
+    bottom: 0vh;
+    left: 30vh;
+}
+
+.name {
+    position: relative;
+    visibility: hidden;
+}
+
+.work {
+    /* width: 14vw;
+    height: 14vw; */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.work img {
+    /* width: 14vw;
+    height: 14vw; */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#work1 {
+    left: 2vw;
+    top: 10vh;
+}
+
+#work2 {
+    left: 30vw;
+    top: 0vh;
+}
+
+#work3 {
+    left: 60vw;
+    top: 20vh;
+}
+
+#work4 {
+    left: 50vw;
+    top: 40vh;
+}
+
+#work5 {
+    left: 75vw;
+    top: 60vh;
+}
+
+#work6 {
+    left: 40w;
+    top: 50vh;
+}
+
+.column {
+    width: 50vw;
+    float: right;
+}
+
+.example {
+    width: 40vw;
+    float: right;
+
+}
+
+
 
 p {
     color:rgb(39, 31, 27);
@@ -38,32 +111,34 @@ p {
 
 #about1 {
     left: 20vh;
-    bottom: 50vh;
+    bottom: 70vh;
     width: 30vw;
 }
 
 #about2 {
     left: 20vh;
+    bottom: 62vh;
+    width: 30vw;
+}
+
+#aboutMe {
+    position: fixed;
+    left: 20vh;
+    bottom: 50vh;
+    width: 30vw;
+}
+
+#aboutMe2 {
+    position: fixed;
+    left: 20vh;
     bottom: 42vh;
     width: 30vw;
 }
 
-a:hover {
+.sticky {
+    position: fixed;
+}
+
+h2:hover {
     font-style: normal;
-}
-
-.work {
-    width: 14vw;
-    height: 14vw;
-}
-
-.work img {
-    width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.work img:hover {
-
 }
