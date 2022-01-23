@@ -4,7 +4,7 @@ html {
 
 h1 {
     color:rgb(39, 31, 27);
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: -.2pt;
@@ -13,6 +13,40 @@ h1 {
     left: 20vh;
     z-index: 10;
     /* font-family: 'Work Sans', sans-serif; */
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+        top: 30vh;
+    }
+
+    #about1 {
+        left: 6em;
+        top: 5vh;
+        width: 30vw;
+    }
+    
+    #about2 {
+        left: 6em;
+        top: 13vh;
+        width: 30vw;
+    }
+
+    h2 {
+        top: 50vh;
+    }
+
+    .column { /*not working*/
+        position: relative;
+        width: 100vw;
+    }
+
+    .example { /*not working*/
+        width: 100%;
+        position: relative;
+        padding: 1vw;
+    }
 }
 
 h2 {
@@ -24,66 +58,21 @@ h2 {
     letter-spacing: -.2pt;
     position: fixed;
     bottom: 18vh;
-    left: 20vh;
+    left: 6em;
     z-index: 10;
 }
 
-#illo {
+.externalSite {
     position: fixed;
-    bottom: 0vh;
-    left: 30vh;
+    left: 10em;
+}
+
+.work:hover {
+    opacity: 70%;
 }
 
 .name {
-    position: relative;
     visibility: hidden;
-}
-
-.work {
-    /* width: 14vw;
-    height: 14vw; */
-    width: 200px;
-    height: 200px;
-    position: absolute;
-}
-
-.work img {
-    /* width: 14vw;
-    height: 14vw; */
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#work1 {
-    left: 2vw;
-    top: 10vh;
-}
-
-#work2 {
-    left: 30vw;
-    top: 0vh;
-}
-
-#work3 {
-    left: 60vw;
-    top: 20vh;
-}
-
-#work4 {
-    left: 50vw;
-    top: 40vh;
-}
-
-#work5 {
-    left: 75vw;
-    top: 60vh;
-}
-
-#work6 {
-    left: 40w;
-    top: 50vh;
 }
 
 .column {
@@ -94,10 +83,8 @@ h2 {
 .example {
     width: 40vw;
     float: right;
-
+    padding: 1vw;
 }
-
-
 
 p {
     color:rgb(39, 31, 27);
