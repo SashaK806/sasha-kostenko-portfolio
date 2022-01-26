@@ -9,45 +9,12 @@ h1 {
     font-weight: 600;
     letter-spacing: -.2pt;
     position: fixed;
-    bottom: 20vh;
-    left: 20vh;
+    bottom: 22vh;
+    left: 6rem;
     z-index: 10;
     /* font-family: 'Work Sans', sans-serif; */
 }
 
-@media (max-width: 800px) {
-    h1 {
-        font-size: 3rem;
-        top: 30vh;
-    }
-
-    #about1 {
-        left: 6em;
-        top: 5vh;
-        width: 30vw;
-    }
-    
-    #about2 {
-        left: 6em;
-        top: 13vh;
-        width: 30vw;
-    }
-
-    h2 {
-        top: 50vh;
-    }
-
-    .column { /*not working*/
-        position: relative;
-        width: 100vw;
-    }
-
-    .example { /*not working*/
-        width: 100%;
-        position: relative;
-        padding: 1vw;
-    }
-}
 
 h2 {
     color:rgb(39, 31, 27);
@@ -58,13 +25,18 @@ h2 {
     letter-spacing: -.2pt;
     position: fixed;
     bottom: 18vh;
-    left: 6em;
+    left: 6rem;
     z-index: 10;
 }
 
 .externalSite {
     position: fixed;
-    left: 10em;
+    left: 12rem;
+}
+
+.designButton {
+    position: fixed;
+    left: 18rem;
 }
 
 .work:hover {
@@ -86,6 +58,16 @@ h2 {
     padding: 1vw;
 }
 
+.centerVideo {
+    padding-top: 30vh;
+    padding-right: 5vw;
+}
+
+#portrait {
+    width: 30vw;
+    padding: 10vw;
+}
+
 p {
     color:rgb(39, 31, 27);
     font-size: 1rem;
@@ -96,28 +78,28 @@ p {
     position: absolute;
 }
 
-#about1 {
-    left: 20vh;
-    bottom: 70vh;
+#about1{
+    left: 6rem;
+    bottom: 60vh;
     width: 30vw;
 }
 
 #about2 {
-    left: 20vh;
-    bottom: 62vh;
+    left: 6rem;
+    bottom: 50vh;
     width: 30vw;
 }
 
 #aboutMe {
     position: fixed;
-    left: 20vh;
+    left: 6rem;
     bottom: 50vh;
     width: 30vw;
 }
 
 #aboutMe2 {
     position: fixed;
-    left: 20vh;
+    left: 6rem;
     bottom: 42vh;
     width: 30vw;
 }
@@ -128,4 +110,107 @@ p {
 
 h2:hover {
     font-style: normal;
+}
+
+#email:hover {
+    font-style: italic;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+        left: 3rem;
+    }
+
+    h2.aboutButton {
+        left: 3rem;
+    }
+
+    h2.designButton {
+        left: 13rem;
+    }
+
+    h2.externalSite {
+        left: 8rem;
+    }
+
+    #about1 {
+        left: 3rem;
+        top: 5vh;
+        width: 30vw;
+    }
+    
+    #about2 {
+        left: 3rem;
+        top: 13vh;
+        width: 30vw;
+    }
+
+    #aboutMe {
+        left: 3rem;
+    }
+
+    #aboutMe2 {
+        left: 3rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    h1 {
+        top: 5vh;
+        z-index: -10;
+    }
+    h2 {
+        top: 24vh;
+        left: 3rem;
+        z-index: -10; /*problem when padding on column - overlaps*/
+    }
+
+    .column { 
+        width: 100vw;
+        float: right;
+        margin-top: 80vh;
+    }
+
+    .example {
+        width: 90%;
+        padding: 1vw;
+        float: center;
+    }
+
+    .centerVideo {
+        padding: 0;
+    }
+
+    #about1 {
+        z-index: -10;
+        width: 80vw;
+        top: 32vh;
+    }
+
+    #about2 {
+        z-index: -10;
+        width: 80vw;
+        top: 32vh;
+    }
+
+    #aboutMe {
+        width: 80vw;
+        top: 32vh;
+    }
+
+    #aboutMe2 {
+        width: 80vw;
+        top: 60vh;
+    }
+
+    #portrait {
+        padding-top: 80vh;
+    }
+
+    img.example {
+        z-index: 10;
+        padding-bottom: 1vh;
+    }
 }
