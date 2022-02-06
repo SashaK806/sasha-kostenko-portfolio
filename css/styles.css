@@ -66,6 +66,8 @@ h2 {
 #portrait {
     width: 30vw;
     padding: 10vw;
+    /* right: 5vw;
+    top: 5vh; */
 }
 
 p {
@@ -114,6 +116,15 @@ h2:hover {
 
 #email:hover {
     font-style: italic;
+}
+
+.foot {
+    margin-bottom: 4rem;
+}
+
+.specfoot {
+    margin-bottom: 4rem;
+    padding-right: 5vw;
 }
 
 @media (max-width: 1000px) {
@@ -196,11 +207,13 @@ h2:hover {
     }
 
     #aboutMe {
+        z-index: -10;
         width: 80vw;
         top: 32vh;
     }
 
     #aboutMe2 {
+        z-index: -10;
         width: 80vw;
         top: 60vh;
     }
@@ -212,5 +225,11 @@ h2:hover {
     img.example {
         z-index: 10;
         padding-bottom: 1vh;
+    }
+
+    #portrait {
+        left: 5vw;
+        width: 60vw;
+        z-index: 10;
     }
 }
