@@ -31,12 +31,22 @@ h2 {
 
 .externalSite {
     position: fixed;
+    left: 24rem;
+}
+
+.back {
+    position: fixed;
     left: 12rem;
+}
+
+.next {
+    position: fixed;
+    left: 18rem;
 }
 
 .designButton {
     position: fixed;
-    left: 18rem;
+    left: 21rem;
 }
 
 .work:hover {
@@ -138,11 +148,19 @@ h2:hover {
     }
 
     h2.designButton {
-        left: 13rem;
+        left: 16rem;
     }
 
     h2.externalSite {
+        left: 18rem;
+    }
+
+    .back {
         left: 8rem;
+    }
+
+    .next {
+        left: 13rem;
     }
 
     #about1 {
@@ -167,7 +185,7 @@ h2:hover {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     h1 {
         top: 5vh;
         z-index: -10;
