@@ -1,52 +1,49 @@
 html {
-    background-color:rgb(241, 237, 233);
+    background-color:rgb(37, 37, 37);
 }
 
 h1 {
-    color:rgb(39, 31, 27);
+    color:rgb(241, 237, 233);
     font-size: 5vw;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: -.2pt;
-    position: fixed;
-    bottom: 22vh;
-    left: 6rem;
+    position: relative;
     z-index: 10;
     /* font-family: 'Work Sans', sans-serif; */
 }
 
 
 h2 {
-    color:rgb(39, 31, 27);
+    color:rgb(241, 237, 233);
     font-size: 1.5rem;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
-    font-style: italic;
+    font-style: normal;
     letter-spacing: -.2pt;
-    position: fixed;
-    bottom: 18vh;
-    left: 6rem;
+    position: relative;
+    display: inline;
     z-index: 10;
 }
 
 .externalSite {
-    position: fixed;
-    left: 24rem;
-}
-
-.back {
-    position: fixed;
+    position: relative;
     left: 12rem;
 }
 
+.back {
+    position: relative;
+    left: 4rem;
+}
+
 .next {
-    position: fixed;
-    left: 18rem;
+    position: relative;
+    left: 8rem;
 }
 
 .designButton {
-    position: fixed;
-    left: 21rem;
+    position: relative;
+    left: 12rem;
 }
 
 .work:hover {
@@ -73,6 +70,12 @@ h2 {
     padding-right: 5vw;
 }
 
+.fixedContainer {
+    position: fixed;
+    top: 5vh;
+    left: 6rem;
+}
+
 #portrait {
     width: 30vw;
     padding: 10vw;
@@ -81,46 +84,39 @@ h2 {
 }
 
 p {
-    color:rgb(39, 31, 27);
-    font-size: 1rem;
+    color:rgb(241, 237, 233);
+    font-size: 1.15rem;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: -.2pt;
-    position: absolute;
-}
-
-#about1{
-    left: 6rem;
-    bottom: 60vh;
-    width: 30vw;
-}
-
-#about2 {
-    left: 6rem;
-    bottom: 50vh;
-    width: 30vw;
+    line-height: 130%;
+    position: relative;
+    width: 35vw;
+    /* font-family: 'Work Sans', sans-serif; */
+    
 }
 
 #aboutMe {
     position: fixed;
     left: 6rem;
-    bottom: 50vh;
+    /* bottom: 50vh; */
     width: 30vw;
 }
 
 #aboutMe2 {
     position: fixed;
     left: 6rem;
-    bottom: 42vh;
+    /* bottom: 42vh; */
     width: 30vw;
 }
 
 .sticky {
-    position: fixed;
+    height: 40vh;
+    overflow: auto;
 }
 
 h2:hover {
-    font-style: normal;
+    font-style: italic;
 }
 
 #email:hover {
@@ -136,7 +132,11 @@ h2:hover {
     padding-right: 5vw;
 }
 
-@media (max-width: 1000px) {
+a {
+    text-decoration: none;
+}
+
+/* @media (max-width: 1000px) {
     h1 {
         font-size: 3rem;
         left: 3rem;
@@ -182,23 +182,25 @@ h2:hover {
         left: 3rem;
     }
 
-}
+} */
 
-@media (max-width: 700px) {
+@media (max-width: 999px) {
     h1 {
-        top: 5vh;
+        /* top: 5vh; */
         z-index: -10;
+        font-size: 3rem;
     }
+
     h2 {
-        top: 24vh;
-        left: 3rem;
+        /* top: 24vh; */
         z-index: -10; /*problem when padding on column - overlaps*/
+        font-size: 1.5rem;
     }
 
     .column { 
         width: 100vw;
-        float: right;
-        margin-top: 80vh;
+        float: right; /*FIX THIS!!*/
+        margin-top: 70vh;
     }
 
     .example {
@@ -211,16 +213,17 @@ h2:hover {
         padding: 0;
     }
 
-    #about1 {
-        z-index: -10;
-        width: 80vw;
-        top: 32vh;
+    p {
+        width: 60vw;
     }
 
-    #about2 {
+    .sticky {
+        padding-right: 6rem;
+        height: 30vh;
+    }
+
+    .fixedContainer {
         z-index: -10;
-        width: 80vw;
-        top: 32vh;
     }
 
     #aboutMe {
@@ -236,7 +239,7 @@ h2:hover {
     }
 
     #portrait {
-        padding-top: 80vh;
+        margin-top: 60vh;
     }
 
     img.example {
