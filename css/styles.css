@@ -1,14 +1,35 @@
+/*Rubik Dirt Regular*/
+/*Montserrat*/
+
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Dirt';
+    src: url('RubikDirt-Regular.ttf') format('truetype');
+} */
+
+/*
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Rubik Dirt', cursive;
+    */
+
 html {
-    background-color:rgb(37, 37, 37);
+    background-color:rgb(21, 20, 20);
 }
 
 h1 {
     color:rgb(241, 237, 233);
     font-size: 5vw;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    letter-spacing: -.2pt;
+    font-family: 'Rubik Dirt', 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: -.2pt; */
     position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     z-index: 10;
     /* font-family: 'Work Sans', sans-serif; */
 }
@@ -17,7 +38,7 @@ h1 {
 h2 {
     color:rgb(241, 237, 233);
     font-size: 1.5rem;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
     letter-spacing: -.2pt;
@@ -86,10 +107,10 @@ h2 {
 p {
     color:rgb(241, 237, 233);
     font-size: 1.15rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    letter-spacing: -.2pt;
-    line-height: 130%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: -.2pt; */
+    line-height: 145%;
     position: relative;
     width: 35vw;
     /* font-family: 'Work Sans', sans-serif; */
@@ -110,17 +131,31 @@ p {
     width: 30vw;
 }
 
+.fixedContainer {
+    overflow: hidden;
+}
+
 .sticky {
-    height: 40vh;
+    height: 45vh;
+    margin-top: 2rem;
     overflow: auto;
+    padding-right: 20px;
+    scrollbar-width: none;
 }
 
 h2:hover {
-    font-style: italic;
+    opacity: 70%;
 }
 
-#email:hover {
-    font-style: italic;
+.caption {
+   color: rgb(139, 139, 139);
+   font-size: 1.05rem;
+   letter-spacing: 0.03rem;
+   font-weight: 500;
+}
+
+.caption:hover {
+    opacity: 100%;
 }
 
 .foot {
