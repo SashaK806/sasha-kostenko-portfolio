@@ -23,7 +23,7 @@ html {
 
 h1 {
     color:rgb(241, 237, 233);
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-family: 'Rubik Dirt', 'Montserrat', sans-serif;
     font-weight: 400;
     /* letter-spacing: -.2pt; */
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     color:rgb(241, 237, 233);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -133,6 +133,7 @@ p {
 
 .fixedContainer {
     overflow: hidden;
+    width: 50vw;
 }
 
 .sticky {
@@ -169,6 +170,16 @@ h2:hover {
 
 a {
     text-decoration: none;
+}
+
+#insta { /*FIX*/
+    width: 20px;
+    display: inline;
+    margin-right: 10px;
+}
+#stronger-together {
+    /* width: 10vw;
+    float: right; */
 }
 
 /* @media (max-width: 1000px) {
@@ -229,7 +240,7 @@ a {
     h2 {
         /* top: 24vh; */
         z-index: -10; /*problem when padding on column - overlaps*/
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .column { 
@@ -259,6 +270,7 @@ a {
 
     .fixedContainer {
         z-index: -10;
+        width: 100vw;
     }
 
     #aboutMe {
