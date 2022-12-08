@@ -137,7 +137,7 @@ p {
 }
 
 .sticky {
-    height: 45vh;
+    height: 55vh;
     margin-top: 2rem;
     overflow: auto;
     padding-right: 20px;
@@ -146,6 +146,10 @@ p {
 
 h2:hover {
     opacity: 70%;
+}
+
+h2 a {
+    color: white;
 }
 
 .caption {
@@ -157,6 +161,10 @@ h2:hover {
 
 .caption:hover {
     opacity: 100%;
+}
+
+.underline {
+    text-decoration: underline ;
 }
 
 .foot {
