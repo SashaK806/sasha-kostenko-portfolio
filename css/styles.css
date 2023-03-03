@@ -67,28 +67,54 @@ h2 {
     left: 12rem;
 }
 
-.work:hover {
-    opacity: 70%;
-}
-
-.name {
-    visibility: hidden;
-}
-
 .column {
     width: 50vw;
     float: right;
 }
 
+
 .example {
     width: 40vw;
     float: right;
     padding: 1vw;
+    padding-top: .5vw;
+}
+
+.wide .example {
+    width: 50vw;
+}
+
+.first {
+    height: 10px;
+    overflow: hidden;
+    display: inline;
+}
+
+.first video {
+    width: 40vw;
+    
+}
+
+.name {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgb(139, 139, 139);
+    font-size: 1.05rem;
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+}
+
+img.example:hover {
+    opacity: 70%;
+}
+
+video.example:hover {
+    opacity: 70;
 }
 
 .centerVideo {
     padding-top: 20vh;
-    padding-right: 5vw;
+    
 }
 
 .fixedContainer {
@@ -144,8 +170,31 @@ p {
     scrollbar-width: none;
 }
 
+.sticky #about1 {
+    overflow: scroll;
+}
+
+.sticky a {
+    color:rgb(233, 88, 51);
+    font-weight: 600;
+}
+
+.sticky a:hover {
+    opacity: 70%;
+}
+
 h2:hover {
     opacity: 70%;
+}
+
+/* .name.example:hover {
+    color: rgb(241, 237, 233);
+    font-weight: 700;
+    opacity: 100;
+} */
+
+.work a:hover {
+    font-weight: 700;
 }
 
 h2 a {
@@ -173,7 +222,7 @@ h2 a {
 
 .specfoot {
     margin-bottom: 4rem;
-    padding-right: 5vw;
+    /* padding-right: 5vw; */
 }
 
 a {
@@ -186,8 +235,7 @@ a {
     margin-right: 10px;
 }
 #stronger-together {
-    /* width: 10vw;
-    float: right; */
+  
 }
 
 /* @media (max-width: 1000px) {
