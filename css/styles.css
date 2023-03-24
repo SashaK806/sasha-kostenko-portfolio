@@ -102,6 +102,7 @@ h2 {
     font-size: 1.05rem;
     letter-spacing: 0.03rem;
     font-weight: 500;
+    padding-top: .2vw;
 }
 
 img.example:hover {
