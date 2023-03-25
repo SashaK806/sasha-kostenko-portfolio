@@ -77,7 +77,7 @@ h2 {
     width: 40vw;
     float: right;
     padding: 1vw;
-    padding-top: .5vw;
+    padding-top: .2vw;
 }
 
 .wide .example {
@@ -238,6 +238,24 @@ a {
 #stronger-together {
   
 }
+
+.footnote {
+    font-size: .85rem;
+    color:rgb(139, 139, 139); 
+    font-weight: 600;
+    letter-spacing: -.2pt;
+    
+}
+
+/* color:rgb(241, 237, 233);
+font-size: 1rem;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-style: normal;
+letter-spacing: -.2pt;
+position: relative;
+display: inline;
+z-index: 10; */
 
 /* @media (max-width: 1000px) {
     h1 {
