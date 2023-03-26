@@ -105,7 +105,7 @@ h2 {
     padding-top: .2vw;
 }
 
-img.example:hover {
+.work img.example:hover {
     opacity: 70%;
 }
 
