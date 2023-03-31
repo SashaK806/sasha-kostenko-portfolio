@@ -74,14 +74,14 @@ h2 {
 
 
 .example {
-    width: 40vw;
+    width: 50vw;
     float: right;
     padding: 1vw;
     padding-top: .2vw;
 }
 
-.wide .example {
-    width: 50vw;
+.skinny .example {
+    width: 40vw;
 }
 
 .first {
@@ -247,87 +247,76 @@ a {
     
 }
 
-/* color:rgb(241, 237, 233);
-font-size: 1rem;
-font-family: 'Montserrat', sans-serif;
-font-weight: 600;
-font-style: normal;
-letter-spacing: -.2pt;
-position: relative;
-display: inline;
-z-index: 10; */
-
-/* @media (max-width: 1000px) {
-    h1 {
-        font-size: 3rem;
-        left: 3rem;
-    }
-
-    h2.aboutButton {
-        left: 3rem;
-    }
-
-    h2.designButton {
-        left: 16rem;
-    }
-
-    h2.externalSite {
-        left: 18rem;
-    }
-
-    .back {
-        left: 8rem;
-    }
-
-    .next {
-        left: 13rem;
-    }
-
-    #about1 {
-        left: 3rem;
-        top: 5vh;
-        width: 30vw;
-    }
-    
-    #about2 {
-        left: 3rem;
-        top: 13vh;
-        width: 30vw;
-    }
-
-    #aboutMe {
-        left: 3rem;
-    }
-
-    #aboutMe2 {
-        left: 3rem;
-    }
-
-} */
-
 @media (max-width: 999px) {
     h1 {
         /* top: 5vh; */
         z-index: -10;
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     h2 {
         /* top: 24vh; */
         z-index: -10; /*problem when padding on column - overlaps*/
-        font-size: 1rem;
+        font-size: 1.85rem;
+    }
+
+    .fixedContainer {
+        position: relative;
+        z-index: 20;
+        width: 100vw;
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .fixedContainer a h2{
+        display: inline;
+        left: 0;
+        right: 0;
+        padding-right: 10vw;
+        z-index: 0;
+    }
+
+    .caption {
+        font-size: 1.35rem;
+    }
+
+    .name {
+        font-size: 1.85rem;
+    }
+
+    .footnote {
+        font-size: 1.65rem;
+        padding-left: 10vw;
     }
 
     .column { 
         width: 100vw;
-        float: right; /*FIX THIS!!*/
-        margin-top: 70vh;
+        float: center; /*FIX THIS!!*/
+        margin-top: 10vh;
     }
 
     .example {
-        width: 90%;
+        width: 95%;
         padding: 1vw;
         float: center;
+    }
+
+    .skinny {
+        width: 100vw;
+        float: center; /*FIX THIS!!*/
+        margin-top: 10vh;
+    }
+
+    .skinny .example {
+        width: 95%;
+    }
+
+    .skinny.caption {
+        font-size: 2.85rem;
+    }
+
+    .skinny .footnote {
+        font-size: 1.65rem;
     }
 
     .centerVideo {
@@ -335,30 +324,35 @@ z-index: 10; */
     }
 
     p {
-        width: 60vw;
+        width: 80vw;
+        font-size: 1.5rem;
     }
 
     .sticky {
-        padding-right: 6rem;
+        padding-right: 9rem;
         height: 30vh;
     }
 
-    .fixedContainer {
+    /* .fixedContainer {
         z-index: -10;
         width: 100vw;
-    }
+    } */
 
     #aboutMe {
         z-index: -10;
         width: 80vw;
-        top: 32vh;
+        position: relative;
+        padding-left: 0;
+        margin-left: 0;
+        left: 0;
     }
 
-    #aboutMe2 {
+    /* #aboutMe2 {
         z-index: -10;
-        width: 80vw;
+        width: 60vw;
         top: 60vh;
-    }
+        position: relative;
+    } */
 
     #portrait {
         margin-top: 60vh;
