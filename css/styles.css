@@ -17,16 +17,19 @@
     font-family: 'Rubik Dirt', cursive;
     */
 
+
+
 html {
-    background-color:rgb(21, 20, 20);
+    background-color:rgb(241, 237, 233);
 }
 
 h1 {
-    color:rgb(241, 237, 233);
+    color:rgb(21, 20, 20);
     font-size: 4.5vw;
-    font-family: 'Rubik Dirt', 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 600;
     /* letter-spacing: -.2pt; */
+    line-height: 5rem;
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -36,10 +39,10 @@ h1 {
 
 
 h2 {
-    color:rgb(241, 237, 233);
+    color:rgb(21, 20, 20);
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: -.2pt;
     position: relative;
@@ -98,10 +101,10 @@ h2 {
 .name {
     margin-bottom: 0;
     padding-bottom: 0;
-    color: rgb(139, 139, 139);
+    color: rgb(133, 133, 133);
     font-size: 1.05rem;
     letter-spacing: 0.03rem;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: .2vw;
 }
 
@@ -132,10 +135,10 @@ video.example:hover {
 }
 
 p {
-    color:rgb(241, 237, 233);
+    color:rgb(21, 20, 20);
     font-size: 1.15rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
     /* letter-spacing: -.2pt; */
     line-height: 145%;
     position: relative;
@@ -176,16 +179,20 @@ p {
 }
 
 .sticky a {
-    color:rgb(233, 88, 51);
-    font-weight: 600;
+    color:rgb(197, 62, 29);
+    font-weight: 400;
 }
 
 .sticky a:hover {
-    opacity: 70%;
+    text-decoration: solid underline rgb(197, 62, 29) 1.5px;
 }
 
 h2:hover {
-    opacity: 70%;
+    text-decoration: solid underline rgb(197, 62, 29) 1.5px;
+}
+
+.name:hover {
+    text-decoration: none;
 }
 
 /* .name.example:hover {
@@ -195,22 +202,23 @@ h2:hover {
 } */
 
 .work a:hover {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h2 a {
-    color: white;
+    color: rgb(21, 20, 20);
 }
 
 .caption {
-   color: rgb(139, 139, 139);
+   color: rgb(133, 133, 133);
    font-size: 1.05rem;
    letter-spacing: 0.03rem;
-   font-weight: 500;
+   font-weight: 400;
 }
 
 .caption:hover {
     opacity: 100%;
+    text-decoration: none;
 }
 
 .underline {
@@ -240,12 +248,16 @@ a {
 }
 
 .footnote {
-    font-size: .85rem;
-    color:rgb(139, 139, 139); 
-    font-weight: 600;
-    letter-spacing: -.2pt;
-    
+    font-size: 1.05rem;
+    color:rgb(133, 133, 133); 
+    font-weight: 400;
+    padding-left: 0;
+    margin-left: 0;
 }
+
+/* .footnote::before {
+    content: "";
+} */
 
 @media (max-width: 999px) {
     h1 {
