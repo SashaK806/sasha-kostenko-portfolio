@@ -29,12 +29,11 @@ h1 {
     font-family: 'Poppins', 'Arial', sans-serif;
     font-weight: 600;
     /* letter-spacing: -.2pt; */
-    line-height: 4rem;
+    line-height: 5rem;
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     z-index: 10;
-    width: 30%;
     /* font-family: 'Work Sans', sans-serif; */
 }
 
@@ -256,8 +255,8 @@ a {
     margin-left: 0;
 }
 
-/* .footnote::before {
-    content: "";
+/* .sparkle {
+    content: "*";
 } */
 
 @media (max-width: 999px) {
