@@ -263,8 +263,9 @@ a {
     h1 {
         /* top: 5vh; */
         z-index: -10;
-        font-size: 8rem;
+        font-size: 6.5rem;
         line-height: 8rem;
+        padding-top: 1.5rem;
     }
 
     h2 {
@@ -308,7 +309,7 @@ a {
     .column { 
         width: 100vw;
         float: center; /*FIX THIS!!*/
-        margin-top: 80vh;
+        margin-top: 40vh;
     }
 
     .example {
@@ -346,7 +347,8 @@ a {
 
     .sticky {
         padding-right: 9rem;
-        height: 30vh;
+        height: 60vh;
+        overflow: visible;
     }
 
     /* .fixedContainer {
