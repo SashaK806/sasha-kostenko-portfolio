@@ -347,8 +347,8 @@ a {
 
     .sticky {
         padding-right: 9rem;
-        height: 60vh;
-        overflow: visible;
+        height: 66vh;
+        overflow: auto;
     }
 
     /* .fixedContainer {
