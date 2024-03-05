@@ -1,22 +1,3 @@
-/*Rubik Dirt Regular*/
-/*Montserrat*/
-
-/* @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Rubik Dirt';
-    src: url('RubikDirt-Regular.ttf') format('truetype');
-} */
-
-/*
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Rubik Dirt', cursive;
-    */
-
     :root {
         --dark: rgb(21, 20, 20);
         --light: rgb(241, 237, 233);
@@ -128,6 +109,8 @@ video.example:hover {
     position: fixed;
     top: 5vh;
     left: 6rem;
+    overflow: hidden;
+    width: 50vw;
 }
 
 #portrait {
@@ -164,11 +147,6 @@ p {
     width: 30vw;
 }
 
-.fixedContainer {
-    overflow: hidden;
-    width: 50vw;
-}
-
 .sticky {
     height: 55vh;
     margin-top: 2rem;
@@ -197,12 +175,6 @@ h2:hover {
 .name:hover {
     text-decoration: none;
 }
-
-/* .name.example:hover {
-    color: rgb(241, 237, 233);
-    font-weight: 700;
-    opacity: 100;
-} */
 
 .work a:hover {
     font-weight: 400;
@@ -290,9 +262,6 @@ label::before {
     display:none;
 }
 
-/* .sparkle {
-    content: "*";
-} */
 
 @media (max-width: 999px) {
     h1 {
@@ -314,10 +283,8 @@ label::before {
         position: relative;
         z-index: 20;
         width: 100vw;
-        height: 100vh;
         left: 0;
         padding-left: 5%;
-        overflow: visible;
     }
 
     .fixedContainer a h2{
@@ -384,11 +351,12 @@ label::before {
         padding-right: 9rem;
         height: 66vh;
         overflow: auto;
+        position: relative;
+        /* visibility: hidden; */
     }
 
-    /* .fixedContainer {
-        z-index: -10;
-        width: 100vw;
+    /* .collapse {
+        visibility: hidden;
     } */
 
     #aboutMe {
@@ -399,13 +367,6 @@ label::before {
         margin-left: 0;
         left: 0;
     }
-
-    /* #aboutMe2 {
-        z-index: -10;
-        width: 60vw;
-        top: 60vh;
-        position: relative;
-    } */
 
     #portrait {
         margin-top: 60vh;
