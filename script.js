@@ -1,26 +1,38 @@
-let mainContent = document.querySelector('.column');
-let secondaryContent = document.querySelector('.column2');
 
+//ON LOAD
+document.querySelector('.collapse').style.display = "none";
+let collapseState = "flex";
+window.onscroll = function() {scrollFunction()};
 
-let checked = 1;
-// let themeColor = document.querySelector('body').style.backgroundColor;
-
-
-document.querySelector('.toggleContainer #toggle').addEventListener('click', e => {
-    if (checked==1){
-        mainContent.style.display = e.target.checked ? 'block' : 'none';
-        secondaryContent.style.display = e.target.checked ? 'none' : 'block';
-        document.querySelector('html').style.backgroundColor = "var(--dark)";
-        checked=2;
-    } else {
-        mainContent.style.display = e.target.checked ? 'none' : 'block';
-        secondaryContent.style.display = e.target.checked ? 'block' : 'none';
-        document.querySelector('html').style.backgroundColor = "var(--light)";
-        checked=1;
+//EXPAND READ MORE
+document.querySelector('.readMore').addEventListener('click', e => {
+    document.querySelector('.collapse').style.display = collapseState; 
+    if (collapseState==="flex"){  //If description is collapsed, make it visible.
+        collapseState = "none";
+        document.querySelector('.readMore').innerHTML = "Read Less";
+    } else { //If description is visible, collapse it.
+        collapseState = "flex";
+        document.querySelector('.readMore').innerHTML = "Read More";
     }
-
-    if (document.querySelector('html').style.backgroundColor.equals("var--dark")) {
-        doc
-    }
-    
 })
+
+//SHOW 'TO TOP'
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector('.toTop').style.display = "block";
+    } else {
+      document.querySelector('.toTop').style.display = "none";
+    }
+  }
+
+//SCROLL TO TOP
+document.querySelector('.toTop').addEventListener('click', e => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
+
+//EXPAND MOBILE MENU
+// document.querySelector('.mobileMenu').addEventListener('click', e => {
+//   document.querySelector('.fixedContainer').style.visibility = visible;
+//   document.querySelector('p').innerHTML = "AAAA";
+// })
