@@ -3,11 +3,22 @@
     --light: rgb(247, 244, 242);
     --med: rgb(118, 118, 118);
     --rouge: rgb(222, 114, 79);
+    --gold: rgb(238, 190, 112);
 }
 
 html {
 background-color:var(--light);
 }
+
+body {
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+  }
+
+  body.fade {
+    opacity: 0;
+  }
 
 h1 {
 color:var(--dark);
@@ -284,9 +295,9 @@ a:visited {
     position: fixed;
     /* top: 5;
     left: 6rem; */
-    padding-top: 1.5em;
+    padding-top: 1.2em;
     padding-left: 20%;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.2em;
     top: 0;
     z-index: 100;
     
@@ -294,6 +305,23 @@ a:visited {
     width: 100%;
     background-color: var(--light);
     }
+
+.rightAlign {
+        text-align: right;
+}
+
+.creature {
+    top: 0;
+    right: 10%;
+    position: absolute;
+}
+
+.creature2 {
+    top: 0;
+    left: 0;
+    z-index: 90;
+    position: absolute;
+}
 
 .readMore {
     background-color: var(--light); 
