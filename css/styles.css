@@ -88,6 +88,10 @@ left: 12rem;
 float: right; */
 }
 
+/* .description {
+    float: left;
+} */
+
 
 .example {
 width: 100%;
@@ -312,13 +316,15 @@ a:visited {
 
 .creature {
     top: 0;
-    right: 10%;
+    right: 5%;
+    height: 80%;
     position: absolute;
 }
 
 .creature2 {
-    top: 0;
+    top: 20%;
     left: 0;
+    height: 60%;
     z-index: 90;
     position: absolute;
 }
@@ -345,11 +351,42 @@ a:visited {
     display: none;
 }
 
+.leftAlign {
+    width: 70%;
+}
+
 
 /*ADD STYLING FOR NEW BUTTONS AND BACK TO TOP OPTIONS! :) */
 
+@media only screen and (max-width: 1000px) {
+    .column {
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        float: center;
+    }
 
-@media (max-width: 480px) {
+    .leftAlign {
+        width: 50%;
+    }
+
+    .fixedContainer{
+        padding-top: 1.2em;
+        padding-left: 10%;
+
+        padding-bottom: 1.2em;
+        top: 0;
+        z-index: 100;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
 
     .column {
         margin-top: 5%;
@@ -363,6 +400,20 @@ a:visited {
         line-height: 3rem;
     }
 
+    .creature {
+        height: 40%;
+        top: 6%;
+        z-index: 89;
+        right: 0;
+    }
+
+    .creature2 {
+        height: 35%;
+        top: 4em;
+        z-index: 89;
+        
+    }
+
     .fixedContainer{
         position: fixed;
         padding-top: 5%;
@@ -374,207 +425,4 @@ a:visited {
         background-color: var(--light);
         /* visibility: hidden; */
     }
-    
-    /* .homeButton {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    }
-        
-    .playgroundButton {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    }
-        
-    .aboutButton {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    }
-
-    .back {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    }
-
-    .next {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    }
-
-    .externalSite {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    } */
-
-    /* .externalSite {
-        position: relative;
-        display: inline;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    } */
-        
-    /* .designButton {
-        position: relative;
-        left: 0;
-        display: block;
-        font-size: 3rem;
-    } */
-
-
-    /* .fixedContainer {
-        position: relative;
-        width: 100vw;
-    }
-    
-    .sticky {
-        width: 100vw;
-        overflow: none;
-    }
-    
-    .column {
-        position: relative;
-    } */
-
-    .mobileMenu {
-        width: 16%;
-        z-index: 100;
-        position: fixed;
-        display: block;
-        right: 5%;
-        padding: 5%;
-    }
-    }
-    /*ADD ANIMATION?*/
-
-    .mobileMenu:hover {
-        cursor:pointer;
-    }
-
-
-/*PREVIOUS MOBILE FRIENDLY VERSION*/
-/* @media (max-width: 999px) {
-h1 {
-    z-index: -10;
-    font-size: 6.5rem;
-    line-height: 8rem;
-    padding-top: 1.5rem;
 }
-
-h2 {
-    z-index: -10;
-    font-size: 1.85rem;
-    padding-top: 4rem;
-}
-
-.fixedContainer {
-    position: relative;
-    z-index: 20;
-    width: 100%;
-    left: 0;
-    padding-left: 5%;
-}
-
-.fixedContainer a h2{
-    display: inline;
-    left: 0;
-    right: 0;
-    padding-right: 6rem;
-    z-index: 0;
-}
-
-.caption {
-    font-size: 1.65rem;
-}
-
-.name {
-    font-size: 1.85rem;
-}
-
-.footnote {
-    font-size: 1.65rem;
-    padding-left: 4vw;
-}
-
-.column { 
-    width: 100vw;
-    float: center; 
-    margin-top: 40vh;
-}
-
-.example {
-    width: 100%;
-    margin-top: 0%;
-    margin-bottom: 4%;
-    float: center;
-}
-
-.skinny {
-    width: 100vw;
-    float: center; 
-    margin-top: 10vh;
-}
-
-.skinny .example {
-    width: 95%;
-}
-
-.skinny.caption {
-    font-size: 2.85rem;
-}
-
-.skinny .footnote {
-    font-size: 1.65rem;
-}
-
-.centerVideo {
-    padding: 0;
-}
-
-p {
-    width: 80vw;
-    font-size: 2.5rem;
-}
-
-.sticky {
-    padding-right: 9rem;
-    height: 66vh;
-    overflow: auto;
-    position: relative;
-}
-
-#aboutMe {
-    z-index: -10;
-    width: 80vw;
-    position: relative;
-    padding-left: 0;
-    margin-left: 0;
-    left: 0;
-}
-
-#portrait {
-    margin-top: 60vh;
-}
-
-img.example {
-    z-index: 10;
-    padding-bottom: 1vh;
-}
-
-#portrait {
-    left: 5vw;
-    width: 60vw;
-    z-index: 10;
-}
-} */
