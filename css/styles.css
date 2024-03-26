@@ -358,7 +358,7 @@ a:visited {
 
 /*ADD STYLING FOR NEW BUTTONS AND BACK TO TOP OPTIONS! :) */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .column {
         margin-top: 5%;
@@ -377,12 +377,11 @@ a:visited {
         top: 6%;
         z-index: 89;
         right: 0; */
-        position: relative;
-        height: 60%;
-        float: left;
+        display: none;
     }
 
     .creature2 {
+        display: none;
         height: 35%;
         top: 4em;
         z-index: 89;
