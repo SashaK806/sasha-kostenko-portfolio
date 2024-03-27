@@ -204,6 +204,7 @@ color: var(--rouge);
 }
 
 span {
+
     color:var(--rouge);
 }
 
@@ -377,15 +378,15 @@ a:visited {
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     span {
-        font-size: 1.2rem;
+        font-size: 1.3em;
         
     }
 
