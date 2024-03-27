@@ -377,7 +377,7 @@ a:visited {
         line-height: 4rem;
     }
 
-    h2 {
+    /* h2 { fix later
         font-size: 1.2em;
     }
 
@@ -387,7 +387,7 @@ a:visited {
 
     span {
         
-        font-size: 1.2em;
+        font-size: 1.2em; */
     }
 
     .creature {
