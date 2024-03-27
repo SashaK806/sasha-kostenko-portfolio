@@ -371,7 +371,7 @@ a:visited {
     }
 
     h1 {
-        top: 40%;
+        top: 50%;
         font-size:4em;
         line-height: 4rem;
     }
@@ -386,6 +386,7 @@ a:visited {
 
     span {
         font-size: 1.2rem;
+        
     }
 
     .creature {
@@ -406,10 +407,10 @@ a:visited {
 
     .fixedContainer{
         position: fixed;
-        padding-top: 1.2em;
+        padding-top: 2em;
         padding-left: 5%;
         padding-right: 5%;
-        padding-bottom: 1.2em;
+        padding-bottom: 2em;
         z-index: 90;
         width: 100%;
         background-color: var(--light);
