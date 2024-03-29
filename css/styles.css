@@ -367,6 +367,17 @@ a:visited {
     display: block;
 }
 
+.pullQuote {
+    font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--gold);
+    color: var(--dark);
+    line-height:145%;
+    /* font-size: 1.4rem; */
+    padding: 6%;
+    /* margin: 2%; */
+}
+
 
 /*ADD STYLING FOR NEW BUTTONS AND BACK TO TOP OPTIONS! :) */
 
@@ -420,6 +431,12 @@ a:visited {
         top: 4em;
         z-index: 89;
         
+    }
+
+    img.floatRight {
+        display: block;
+        float: none;
+        margin-bottom: 10%;
     }
 
     .fixedContainer{
