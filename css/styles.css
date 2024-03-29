@@ -359,6 +359,14 @@ a:visited {
     width: 70%;
 }
 
+.mobileShow {
+    display: none;
+}
+
+.mobileHide {
+    display: block;
+}
+
 
 /*ADD STYLING FOR NEW BUTTONS AND BACK TO TOP OPTIONS! :) */
 
@@ -424,6 +432,14 @@ a:visited {
         width: 100%;
         background-color: var(--light);
         /* visibility: hidden; */
+    }
+
+    .mobileShow {
+        display: block;
+    }
+
+    .mobileHide {
+        display: none;
     }
 
     /* .column {
