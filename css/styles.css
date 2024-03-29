@@ -211,8 +211,8 @@ span {
 
 .caption {
 color: var(--med);
-font-size: 1.05rem;
-font-weight: 400;
+/* font-size: 1.05rem;
+font-weight: 400; */
 }
 
 .caption:hover {
@@ -385,9 +385,17 @@ a:visited {
         font-size: 1.5rem;
     }
 
+    /* .description p {
+        font-size: 1.2em;
+    } */
+
     span {
         
         font-size: 1.2em;
+    }
+
+    .readMore {
+        font-size: 1.5rem;
     }
 
     .creature {
