@@ -1,3 +1,8 @@
+//HIDE PAGE UNTIL IT LOADS  
+document.querySelector('body').style.display = "none";
+document.addEventListener("DOMContentLoaded", function (){
+  document.querySelector('body').style.display = "block";
+})
 
 //ON LOAD
 let collapseState;
@@ -7,6 +12,7 @@ if (!(document.querySelector('.collapse') == null)) {
 }
 window.onscroll = function() {scrollFunction()};
 window.onscroll = function() {colorOnScroll()};
+
 
 
 //EXPAND READ MORE
