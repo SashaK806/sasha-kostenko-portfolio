@@ -53,12 +53,16 @@ z-index: 10;
     left: 0;
 }
 
-.playgroundButton {
+.videoButton {
     left: 4rem;
 }
 
-.aboutButton {
+.playgroundButton {
     left: 8rem;
+}
+
+.aboutButton {
+    left: 12rem;
 }
 
 .externalSite {
@@ -227,6 +231,7 @@ text-decoration: underline ;
 
 .foot {
 margin-bottom: 4rem;
+margin-top: 4rem;
 }
 
 .specfoot {
