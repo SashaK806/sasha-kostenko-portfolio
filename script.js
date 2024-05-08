@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
 //ON LOAD
 let collapseState;
+// document.body.style.cursor = "images/sun-icon.png";
 if (!(document.querySelector('.collapse') == null)) {
   document.querySelector('.collapse').style.display = "none";
   collapseState = "flex";
